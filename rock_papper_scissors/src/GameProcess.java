@@ -22,9 +22,9 @@ public class GameProcess {
         String computerChoise = listOfVariants.get(num);
         switch (computerChoise) {
             case "К":
-                if (computerChoise.equals("К") & !Objects.equals(userChoise, "Б")) {
+                if (computerChoise.equals("К") & !Objects.equals(userChoise, "Б") & !Objects.equals(userChoise, "К")) {
                     computerScore += 1;
-                    return "Компьютер победил";
+                    return "Компьютер победил, он выбрал: " + computerChoise;
                 } else if (computerChoise.equals("К") & Objects.equals(userChoise, "К")) {
                     return "Нужно переиграть";
 
@@ -33,9 +33,9 @@ public class GameProcess {
                     return "Вы победили";
                 }
             case "Н":
-                if (computerChoise.equals("Н") & !Objects.equals(userChoise, "К")) {
+                if (computerChoise.equals("Н") & !Objects.equals(userChoise, "К") & !Objects.equals(userChoise, "Н")) {
                     computerScore += 1;
-                    return "Компьютер победил";
+                    return "Компьютер победил, он выбрал: " + computerChoise;
                 } else if (computerChoise.equals("Н") & userChoise.equals("Н")) {
                     return "Нужно переиграть";
 
@@ -44,9 +44,9 @@ public class GameProcess {
                     return "Вы победили";
                 }
             case "Б":
-                if (computerChoise.equals("Б") & !Objects.equals(userChoise, "Н")) {
+                if (computerChoise.equals("Б") & !Objects.equals(userChoise, "Н") & !Objects.equals(userChoise, "Б")) {
                     computerScore += 1;
-                    return "Компьютер победил";
+                    return "Компьютер победил, он выбрал: " + computerChoise;
                 } else if (computerChoise.equals("Б") & userChoise.equals("Б")) {
                     return "Нужно переиграть";
 
@@ -67,5 +67,13 @@ public class GameProcess {
     public String getScore() {
         return "Ваши очки: " + userScore + "\n"
                 + "Очки компьютера: " + computerScore;
+    }
+
+    public int getUserScore() {
+        return userScore;
+    }
+
+    public int getComputerScore() {
+        return computerScore;
     }
 }
