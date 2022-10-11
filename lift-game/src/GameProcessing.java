@@ -29,9 +29,8 @@ public class GameProcessing implements Runnable {
             System.out.printf(s + " ");
         }
         while (floor != 164) {
-            System.out.println(" ");
-            System.out.println("На какой этаж поедем?");
             floor = scanner.nextInt();
+            System.out.print("\r");
             if (floor <= floorList.size() & floor > 0) {
                 while (currentFloor != floor) {
                     if (currentFloor < floor) {
@@ -41,6 +40,7 @@ public class GameProcessing implements Runnable {
                             for (String s1 : floorList) {
                                 System.out.print(s1 + " ");
                             }
+                            System.out.print("\r");
                             try {
                                 Thread.sleep(600);
                             } catch (InterruptedException e) {
@@ -52,13 +52,13 @@ public class GameProcessing implements Runnable {
 
 
                     } else if (currentFloor > floor) {
-                        System.out.println(currentFloor + "currentFLOOR");
                         for (int i = currentFloor - 1; i > floor - 2; i--) {
                             String s = floorList.get(i);
                             floorList.set(i, "{" + floorList.get(i) + "}");
                             for (String s1 : floorList) {
                                 System.out.print(s1 + " ");
                             }
+                            System.out.print("\r");
                             try {
                                 Thread.sleep(600);
                             } catch (InterruptedException e) {
@@ -70,7 +70,6 @@ public class GameProcessing implements Runnable {
 
                     }
                 }
-                System.out.println("Вы уже на этом этаже");
 
             } else System.out.println("Вы не можете поехать на этот этаж(");
 
