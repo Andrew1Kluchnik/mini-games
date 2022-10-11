@@ -19,6 +19,7 @@ public class GameCreator {
         while (Arrays.asList(shifrWord).contains("_")) {
             showWord(shifrWord);
             System.out.println("Введите букву");
+            userAttempt++;
             String letter = scanner.next();
             usedLettersList.add(letter);
             if (checkLetter(letter)&&findLetter(letter)) {
@@ -26,12 +27,12 @@ public class GameCreator {
             } else System.out.println("попробуйте ещё раз");
         }
         System.out.println("Вы победюкали, кол-во попыток: " + userAttempt);
+        System.out.println("Ваше слово: "+word);
 
 
     }
 
     public boolean findLetter(String letter) {
-        userAttempt++;
         boolean b = false;
         char[] wordChar = word.toCharArray();
         for (int i = 0; i < wordChar.length; i++) {
