@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d489127c-df6b-4bfb-85e1-cc5f64e236bd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gallows-game.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallows-game/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallows-game/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallows-game/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallows-game/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallows-game/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallows-game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gallows-game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallows-game/gallows-game.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="d489127c-df6b-4bfb-85e1-cc5f64e236bd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +36,7 @@
       <updated>1665350227761</updated>
       <workItem from="1665350229127" duration="36000" />
       <workItem from="1665350870844" duration="55000" />
+      <workItem from="1665483947448" duration="58000" />
     </task>
     <servers />
   </component>
