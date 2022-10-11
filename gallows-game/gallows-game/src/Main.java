@@ -1,5 +1,7 @@
 public class Main {
+private static GameController gameController = new GameController();
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+    gameController.getResult();
+        System.out.println("Вы хотите сыграть в игру?");
     }
 }
